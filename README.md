@@ -1,85 +1,90 @@
 # git_assignment_HeroVired
 Assignment
+Created CalculatorPlus.py (on local systemuder d:\Git_Assignment\git_assignment_HeroVired)
+Written code for CalculatorPlus.py and saved it.
+>git branch dev
+>git checkout dev
+>git add .
+>git commit -m "CalculatorPlus"
+>git merge main (merge dev to main)
+git push
+--Version one released
+>git tag -a v1.0 -m "Release version 1.0"
+git push origin v1.0
+>added collaborators
+>git branch feature/sqrt
+>git add .
+>git commit -m "Square_root function added"
+>git push origin featur/sqrt
+Code giving error raise ValueError("Cannot divide by zero.") now some code added and tested , now  working fine
+>git add .
+>git commit -m "Exception handling added"
+>git push origin dev
+> git fetch origin
+>git push orgin main
+>git checkout dev
+>git merge dev
+>git push
+reviwer added to review code after it is applied to merge with main  - Approved
+-pull and merge request done on github - merge to dev is completed
+>git tag -a v2.0 -m "Release version 2.0"
+>git push origin v2.0
+=========================================================================================
+>Git bash started from the folder that contain files
+>git lfs install
+>git init
+>git branch lfs
+>git checkout lfs
+>git status
+as i am looking after to upload files that is .mp4 so will run command to track the file.
+>git lfs track"*.mp4"
+>git add .
+>git commit -m "Git LFS"
+now it is ready to push
+>git push https://github.com/007kumar/git_assignment_HeroVired.git
+we can test it by cloning
+>git lfs status
+>git lfs ls-files
+>git clone https://github.com/007kumar/git_assignment_HeroVired.git
+files are tested with donwload on other system with the help of team member Salman.
+
+=========================================================================================
+Created geometry-calculato.py (on local systemuder d:\Git_Assignment\git_assignment_HeroVired)
+and write code for ractangle-area and save it.
+>git branch feature/circle-area
+>git checkout feature/circle-area
+ - after saving code for circle-area
+>git add .
+>git stash
+>git stash pop
+>git commit -m "Circle area" 
+>git push
+>git branch dev
+ - after switching to dev merging with dev
+>git merge feature/circle-area
+-pull and merge request done on github - merge to dev is completed
+Now after writing code for ractangle-area and saving it.
+>git branch feature/rectangle-area
+>git checkout feature/rectangle-area
+ ----after saving code for rectangle-area
+>git add .
+>git stash
+>git stash pop
+>git commit -m "rectangle-area" 
+>git push
+>git branch dev
+>git merge feature/rectangle-area
+-pull and merge request done on github - merge to dev is completed
+git tag -a v1.0 -m "Release version 1.0"
+> git pull origin main
+>git checkout main
+>git merge dev
+>git push
+reviwer added to review code after it is applied to merge with main  - Approved
+-pull and merge request done on github - merge to dev is completed
+>git merge dev
+>git push
+git tag -a v2.0 -m "Release version 2.0"
 
 
-Q.1: You are part of a development team working on a Python application called "CalculatorPlus." The application provides basic arithmetic operations, such as addition, subtraction, multiplication, and division. Your task is to implement a new feature that adds support for calculating the square root of a number.
 
-a. Create a repository name: git_assignment_HeroVired
-
-b. Create a ‘dev’ branch and add this code.
-
-c. Merge this branch with the main branch and make a release of version 1 of the ‘calculator plus app’.
-
-d. Add any of your classmates as collaborators.
-
-e. Implement a feature by creating a new branch called ‘feature/sqrt’. f. Add the ‘sqrt’ code to it.
-
-g. While you are working on this feature, imagine that one critical bug is reported in the main branch, and you need to switch back to the ‘dev’ branch, create fixes, and apply them while keeping your ‘feature/sqrt’ branch up-to-date. For this, you need to create
-
-h. After completing the feature implementation and ensuring that the application works correctly, create a pull request targeting the main branch.
-
-i. Request a code review from a team member and make any necessary improvements based on the review feedback.
-
-j. Once the code reviewer approves your pull request, merge the "feature/sqrt" branch into the ‘dev’ branch.
-
-k. Finally, do the testing in the ‘dev’ branch itself and merge it into the ‘main’ branch and create a ‘version 2’ release.
-
-
-
-
-
-Q.2: For a project that deals with large binary files, integrate Git LFS (Large File Storage) to handle these files efficiently. Demonstrate how to add, commit, and push binary files to the repository, ensuring they are tracked by Git LFS correctly. Clone the repository on another machine to verify that the binary files are downloaded correctly.
-
-In the repository ‘git_assignment_HeroVired’, create a branch ‘lfs’. Upload any large file whose size is over ‘200mb’ and try to push this file into the repository.
-
-
-
-
-
-Q.3: In this same GitHub repository, create a new branch ‘geometry-calculator’, we'll work on a simple Python program that calculates the area of a circle and the area of a rectangle. We'll use Git stash to switch between working on multiple features (calculating circle area and calculating rectangle area) without committing incomplete changes.
-
-Workflow Steps:
-
-a. Create a New Branch:
-
-- Create a new branch named "feature/circle-area" to work on the circle area feature
-
-b. Stash Changes for Circle Area Feature:
-
-- Before committing the changes, stash them using git stash to save the incomplete feature implementation.
-
-- Verify that the working directory is clean
-
-c. Create a New Branch for Rectangle Area Feature:
-
-- Create a new branch named "feature/rectangle-area" to work on the rectangle area
-
-d. Stash Changes for Rectangle Area Feature:
-
-- Before committing the changes, stash them using git stash to save the incomplete feature implementation.
-
-- Verify that the working directory is clean
-
-e. Switch Back to Circle Area Branch:
-
-- Switch back to the "feature/circle-area" branch to continue working on the circle area feature.
-
-- Retrieve the stashed changes
-
-- Complete the circle area feature implementation and save the changes. f. Commit and Push Circle Area Feature:
-
-g. Switch Back to Rectangle Area Branch:
-
-- Switch back to the "feature/rectangle-area" branch to continue working on the rectangle area feature.
-
-- Retrieve the stashed changes
-
-- Complete the rectangle area feature implementation and save the changes. h. Commit and Push Rectangle Area Feature
-
-i. Create Pull Requests:
-
-- Create a pull request to the ‘dev’ branch.
-
-j. Review and Merge
-
-- Have another team member or reviewer review your pull requests. - After receiving approval, merge both pull requests into the main branch.
